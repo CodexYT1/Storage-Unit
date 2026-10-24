@@ -1,0 +1,9 @@
+<h1>Lager</h1>
+
+@for (product of products; track product.id) {
+    <div class="product">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <p>Pris: {{ product.price | currency }}</p>
+    </div>
+}
