@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { mockProducts } from '../../mock-data/product-mock';
 
 @Component({
   selector: 'app-home-page-component',
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './home-page-component.html',
   styleUrl: './home-page-component.scss',
 })
-export class HomePageComponent {}
+export class HomePageComponent {
+
+  products = mockProducts;
+}
