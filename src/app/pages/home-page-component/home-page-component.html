@@ -1,9 +1,10 @@
 <h1>Lager</h1>
-
-@for (product of products; track product.id) {
-    <div class="product">
-        <h2>{{ product.name }}</h2>
-        <p>{{ product.description }}</p>
-        <p>Pris: {{ product.price | currency }}</p>
-    </div>
-}
+<div class="products-card">
+    @for (product of products; track product.productId) {
+        <div class="products">
+            <h2>{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+            <p>Pris: {{ product.price }}</p>
+        </div>
+    }
+</div>
