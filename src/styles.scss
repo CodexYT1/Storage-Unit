@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --color-primary: #eb8934;
+    --color-background: #1c1c1b;
+    --color-text: #f4f6fa; 
+    --color-card: #171716;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1rem;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+h1 {
+    max-width: 700px;
+    font-size: 2rem;
+    color: var(--color-primary);
+}
